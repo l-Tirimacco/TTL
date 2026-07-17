@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TTL — Recuperá tu tiempo, recuperá el control</title>
+<meta name="description" content="TTL (Time to Live) es una app para Android que bloquea apps, sitios web, reels y shorts, con protección anti-desinstalación, cronogramas y breaks configurables.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="#top" class="logo">TTL<span>_</span></a>
+    <ul class="nav-links">
+      <li><a href="#funciones">Funciones</a></li>
+      <li><a href="#proximamente">Próximamente</a></li>
+      <li><a href="#descarga">Descarga</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="descargar.html" class="btn btn-primary btn-sm">Descargar</a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu">
+  <a href="#funciones">Funciones</a>
+  <a href="#proximamente">Próximamente</a>
+  <a href="#descarga">Descarga</a>
+  <a href="descargar.html" class="btn btn-primary">Descargar TTL</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">TTL | Time to Live</span>
+        <h1>Recuperá tu tiempo.<br>Recuperá el control.</h1>
+        <p class="hero-sub">Usá menos el celular, empezá a vivir más.</p>
+        <p class="lede">TTL bloquea apps, sitios web, reels y shorts, y no te deja desinstalarla en un momento de debilidad. Configurá cronogramas y breaks a tu medida, y hacete el dueño de tu tiempo.</p>
+        <div class="hero-ctas">
+          <a href="descargar.html" class="btn btn-primary">Descargar TTL</a>
+        </div>
+      </div>
+
+      <div class="sim-widget reveal">
+        <div class="sim-head">
+          <span><span class="dot"></span>SIMULADOR</span>
+          <span>TIEMPO DE VIDA</span>
+        </div>
+        <p class="sim-question">¿Cuántas horas por día usás el teléfono?</p>
+        <div class="sim-current">
+          <span class="sim-current-value" id="simHoursValue">4.0</span>
+          <span class="sim-current-label">hs/día</span>
+        </div>
+        <div class="sim-slider-row">
+          <input type="range" min="0.5" max="12" step="0.1" value="4" id="simRange" aria-label="Horas por día en el teléfono">
+        </div>
+        <div class="sim-results">
+          <div class="sim-result">
+            <span class="sim-number" id="simDays">5.0</span>
+            <span class="sim-label">días al mes</span>
+          </div>
+          <div class="sim-result">
+            <span class="sim-number" id="simWeeks">8.7</span>
+            <span class="sim-label">semanas al año</span>
+          </div>
+        </div>
+        <p class="sim-caption">Choca, ¿no? TTL te ayuda a recuperarlo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="problem">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">El problema</span>
+        <h2>Tu atención es tu recurso más valioso —y las empresas compiten por ella.</h2>
+        <p class="lede">El problema no es la falta de voluntad. Las apps están diseñadas para retenerte con scroll infinito y autoplay. TTL está diseñada para ayudarte a combatirlo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUNCIONES -->
+  <section class="features" id="funciones">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Funciones</span>
+        <h2>Reglas simples. Resultados reales.</h2>
+        <p class="lede">Vos decidís qué se bloquea, dónde y cuándo. TTL se encarga de que se cumpla.</p>
+      </div>
+
+      <div class="feature-group reveal">
+        <h3 class="group-title">Bloqueo total</h3>
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3>Bloqueo de apps</h3>
+            <p>Bloqueá las apps que querés dejar de usar, ahora sin trampas.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Bloqueo de sitios web</h3>
+            <p>Impedí el acceso a las páginas webs que más te consumen.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Bloqueo de reels y shorts</h3>
+            <p>Bloqueá solo el contenido de scroll infinito y mantené el acceso a la app.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-group reveal">
+        <h3 class="group-title">Tiempo con estructura</h3>
+        <div class="features-grid cols-2">
+          <div class="feature-card">
+            <h3>Cronogramas y horarios</h3>
+            <p>Decidí en qué franjas horarias se bloquea o se libera cada grupo de apps: bloqueado para estudiar o trabajar, libre después.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Breaks configurables</h3>
+            <p>Definí cuántos descansos podés tomar por día y cuánto dura cada uno, para cuando de verdad los necesites.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-group reveal">
+        <h3 class="group-title">Protección anti-desinstalación</h3>
+        <div class="shield-card">
+          <h3>Modo estricto</h3>
+          <p>TTL impide desinstalar la app o desactivar el bloqueo hasta que cumplas tu regla. Mientras sumamos más opciones, usá la función de delay para obligarte a esperar el tiempo que vos definas antes de cambiar cualquier ajuste.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRÓXIMAMENTE -->
+  <section class="upcoming" id="proximamente">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Próximamente</span>
+        <h2>Novedades que están en camino</h2>
+        <p class="lede">Nuevas herramientas para que tus reglas sean todavía más difíciles de romper cuando aparezca el impulso.</p>
+      </div>
+
+      <div class="upcoming-grid reveal">
+        <article class="upcoming-card">
+          <h3>Traba extra para el modo estricto</h3>
+          <p>Vas a poder pedir una contraseña o escribir un texto aleatorio antes de desactivar el modo estricto.</p>
+        </article>
+        <article class="upcoming-card">
+          <h3>Tiempo límite diario por app</h3>
+          <p>Vas a poder definir cuántos minutos por día podés usar cada app en particular, además de los bloqueos y horarios generales.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESCARGA -->
+  <section class="download-band" id="descarga">
+    <div class="container">
+      <div class="download-card reveal">
+        <span class="status-chip"><span class="dot"></span>en desarrollo activo</span>
+        <h2>Probá TTL hoy mismo</h2>
+        <p class="lede">La app todavía se está construyendo, pero ya podés descargar la versión actual siguiendo la lista detallada de instalación. Se suman funciones nuevas todo el tiempo.</p>
+        <a href="descargar.html" class="btn btn-primary">Ir a descargar</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <span class="logo">TTL<span>_</span></span>
+    <span class="text-muted">Recuperá tu tiempo. Hecho para Android.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
